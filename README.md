@@ -1,1 +1,3 @@
-# Parallel-Processing-Interprocess-Communication-Demo
+# Parallel Processing & Interprocess Communication Demo
+
+This C program demonstrates parallel computation using fork and pipe mechanisms in Unix-like systems. The code creates a set of child processes, each responsible for reading integer values from a binary data file (data.bin), squaring the values, and passing the results through a pipe to the parent process. The program divides the task into multiple stages, with each set of child processes handling a specific range of data. The parent process waits for the completion of each set of child processes and accumulates the squared values obtained from them, ultimately calculating the total sum. This project serves as an educational example of inter-process communication and parallel computing in C, showcasing how to leverage fork and pipe for efficient data processing in a concurrent environment.
